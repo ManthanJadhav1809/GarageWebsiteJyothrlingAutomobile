@@ -1,0 +1,288 @@
+/* style.css */
+:root{
+  --primaryColor: #282c34;
+  --secondaryColor: #af4c4c;
+  --accentColor: #ff9800;
+  --neutralColor: #f5f5f5;
+  --white: #ffffff;
+  --fontPrimary: 'Montserrat', sans-serif;
+  --fontSecondary: 'Roboto', sans-serif;
+
+}
+
+
+
+
+.navCar .navbar-brand:hover .navBarTitles,
+.navCar .nav-link:hover {
+  color: var(--secondaryColor);
+}
+
+
+
+
+/* about us.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-family: var(--fontPrimary);
+  background-color: var(--primaryColor);
+  color: var(--white);
+
+}
+
+.aboutUsContainer {
+  background-color: var(--secondaryColor);
+  color: white;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.aboutUsMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.aboutUsText {
+  flex: 1;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.aboutUsH2 {
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: 4.5em;
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+}
+
+.aboutUsp {
+  transition: opacity 2s ease-in-out 1s;
+}
+
+.carImage {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+}
+
+.animate-header {
+  transform: translateX(0);
+}
+
+.animate-text {
+  opacity: 1;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+}
+
+.animate-image {
+  transform: translateX(0);
+}
+
+
+
+/* our servicess css */
+
+
+
+.servicesContainer {
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesHeader {
+  font-weight: bolder;
+    font-size: xx-large;
+    font-family: auto;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+.servicesGrid {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceCard {
+  background-color: var(--neutralColor);
+  color: #000;
+  border-radius: 8px;
+  margin: 20px;
+  overflow: hidden;
+  width: 56%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.imageWrapper {
+  flex: 1;
+}
+
+.serviceImage {
+  width: 100%;
+  height: auto;
+}
+
+.imageAnimation {
+  width: 30%;
+}
+
+.serviceContent {
+  flex: 2;
+  padding: 20px;
+}
+.serviceContent h2{
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+}
+.serviceUl {
+  list-style-type: disclosure-closed;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Apply the secondary font for specific elements */
+h1, h2, h3, .serviceCard h2, .contact-info h2 {
+  font-family: var(--fontSecondary);
+}
+
+.button {
+  background-color: var(--accentColor);
+  color: var(--white);
+  font-family: var(--fontPrimary);
+}
+
+.button:hover {
+  background-color: var(--secondaryColor);
+}
+
+/* contact Details.css */
+.contact-details {
+  background: var(--secondaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("../images/AboutUsImage.jpeg") no-repeat center center / cover;
+  color:var(--white);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-background {
+  background-color: rgba(0, 0, 0, 0.6); /* Add a dark overlay to the background image */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.contact-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: var(--fontSecondary);
+}
+
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: var(--fontSecondary);
+}
+
+.contact-card {
+  margin: 23px 28px;
+}
+/* Map Component */
+/* MapComponent.css */
+.map-container {
+  background: var(--forthColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.responsive-iframe {
+  width: 100%;
+  height: 450px; /* You can adjust the height as needed */
+  max-width: 600px; /* Set a max width for larger screens */
+}
+
+/* Media query for devices with a max-width of 768px (e.g., tablets, mobile devices) */
+@media (max-width: 768px) {
+  .responsive-iframe {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+}
+
+/* Media query for devices with a max-width of 480px (e.g., small mobile devices) */
+@media (max-width: 480px) {
+  .responsive-iframe {
+    width: 100%; /* Full width for very small screens */
+  }
+}

@@ -1,0 +1,174 @@
+/* ResponsiveDesign.css */
+/* About Page */
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .aboutUsMain {
+      flex-direction: column;
+    }
+  
+    .aboutUsH2 {
+      font-size: 3em;
+    }
+  
+    .carImage {
+      margin-top: 20px;
+    }
+
+    .serviceUI{
+      font-size: smaller;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .aboutUsMain {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .aboutUsText {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .carImage {
+      width: 100%;
+      height: auto;
+    }
+  
+    .aboutUsH2 {
+      font-size: 1.8em;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .aboutUsH2 {
+      font-size: 1.8em;
+    }
+  
+    .carImage {
+      width: 100%;
+    }
+  
+    .aboutUsText {
+      padding: 10px;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .aboutUsH2 {
+      font-size: 1.8em;
+    }
+  
+    .carImage {
+      width: 100%;
+    }
+  
+    .aboutUsText {
+      padding: 10px;
+    }
+    .serviceImage {
+      width: 417px;
+      height: 204px;
+      /* border: 5px soild green; */
+    }
+    .contact-info{
+      flex-direction: row;
+    }
+  }
+
+  /* Our Service section */
+  /* @media (min-width: 768px) {
+    
+  
+    .serviceCard {
+      flex-direction: row;
+      width: 100%;
+    }
+    
+    .serviceCard:nth-child(odd) {
+      animation: fadeInLeft 1s forwards;
+    }
+  
+    .serviceCard:nth-child(even) {
+      animation: fadeInRight 1s forwards;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .serviceCard {
+      flex-direction: column;
+    }
+  } */
+  
+  @media (min-width: 768px) {
+    .serviceCard {
+      flex-direction: row;
+      width: 60%;
+    }
+  
+    .serviceCard:nth-child(odd) {
+      animation: fadeInLeft 1s forwards;
+    }
+  
+    .serviceCard:nth-child(even) {
+      animation: fadeInRight 1s forwards;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .serviceCard {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .serviceCard:nth-child(odd),
+    .serviceCard:nth-child(even) {
+      animation: fadeIn 1s forwards;
+    }
+  }
+  
+  /* Contact Details */
+  /* Media query for devices with a max-width of 768px (e.g., tablets, mobile devices) */
+@media (max-width: 768px) {
+  .contact-details {
+    margin-bottom: 30px;
+  }
+
+  .contact-background {
+    width: 90%;
+  }
+
+  .contact-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-card {
+    margin: 15px 0;
+  }
+}
+
+/* Media query for devices with a max-width of 480px (e.g., small mobile devices) */
+@media (max-width: 480px) {
+  .contact-background {
+    width: 95%;
+  }
+
+  .contact-content h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-card {
+    margin: 10px 0;
+  }
+}
