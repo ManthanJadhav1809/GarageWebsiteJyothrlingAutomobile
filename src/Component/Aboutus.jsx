@@ -43,7 +43,7 @@ export default function Aboutus() {
 
   return (
     <div className='aboutUsContainer'>
-      <div className='aboutUsMain'>
+      {/* <div className='aboutUsMain'> */}
         <div className='aboutUsText'>
           <h2 ref={headerRef} className='aboutUsH2'>Jyothrling Automobile</h2>
           <p ref={textRef} className='aboutUsp'>
@@ -55,7 +55,7 @@ export default function Aboutus() {
         <div>
         <img ref={imageRef} className="carImage" src={carImage} alt="Car" /> 
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

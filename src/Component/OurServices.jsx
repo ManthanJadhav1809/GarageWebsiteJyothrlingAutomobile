@@ -50,9 +50,6 @@ export default function OurServices() {
               <li>
                  Electrical system repair
               </li>
-              <li>
-                 Tire and wheel services
-              </li>
             </ul>
           </div>
         </div>
@@ -91,9 +88,6 @@ export default function OurServices() {
               </li>
               <li>
                  Scratch and swirl removal
-              </li>
-              <li>
-                 Ceramic coating application
               </li>
             </ul>
           </div>

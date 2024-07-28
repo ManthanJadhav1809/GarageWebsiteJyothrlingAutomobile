@@ -7,12 +7,9 @@ import HomeComponent from './Component/HomeComponent';
 function App() {
   return (
     <Router>
-      <div className="App">
-
-        <Routes>
+      <Routes>
         <Route path="/" element={<HomeComponent/>} />
-        </Routes>
-      </div>
+      </Routes>
     </Router>
   );
 }
