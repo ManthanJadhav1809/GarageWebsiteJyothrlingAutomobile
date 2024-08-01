@@ -24,8 +24,8 @@ export default function NavbarComponent() {
         </button>
       </div>
       <div className={`secondDiv ${isCollapsed ? 'collapsed' : 'expanded'}`}>
-        <a className="navLinks">Our Services</a>
-        <a className="navLinks">Contact Us</a>
+        <a className="navLinks" href="#services">Our Services</a>
+        <a className="navLinks" href="#contact">Contact Us</a>
       </div>
     </nav>
   );

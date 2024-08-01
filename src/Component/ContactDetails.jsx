@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 const ContactDetails = () => {
   return (
-    <div className="contact-details">
+    <div className="contact-details" id="#contact">
       <div className="contact-background">
         <div className="contact-content">
           <h1>CONTACT DETAILS</h1>

@@ -268,21 +268,7 @@ body {
   }
 }
 
-/* Service Section */
-@media (min-width: 768px) {
-  .serviceCard {
-    flex-direction: row;
-    width: 60%;
-  }
 
-  .serviceCard:nth-child(odd) {
-    animation: fadeInLeft 1s forwards;
-  }
-
-  .serviceCard:nth-child(even) {
-    animation: fadeInRight 1s forwards;
-  }
-}
 
 @media (max-width: 767px) {
   .serviceCard {
@@ -323,10 +309,32 @@ body {
 
 .servicesGrid {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+}
+/* Example CSS */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .serviceCard {
@@ -339,7 +347,18 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   transition: opacity 1s ease-out, transform 1s ease-out;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(0); /* Reset transformation */
 }
+
+.serviceCard.fade-in-left {
+  animation: fadeInLeft 1s forwards;
+}
+
+.serviceCard.fade-in-right {
+  animation: fadeInRight 1s forwards;
+}
+
 
 .imageWrapper {
   flex: 1;
@@ -369,27 +388,7 @@ body {
   font-size: x-large;
 }
 
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
 @keyframes fadeIn {
   0% {
