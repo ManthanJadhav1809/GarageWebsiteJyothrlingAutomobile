@@ -11,7 +11,7 @@ const ContactDetails = () => {
           <div className="contact-info">
             <div className='contact-card'>
               <h2><FontAwesomeIcon icon={faLocationDot} bounce />  ADDRESS</h2>
-              <p>Unnamed Road, Ramkrishna Nagar, Deokar Panand, Kolhapur, Maharashtra 416012</p>
+              <p>Near Hotel Shangreela In front of kalmba Water Tank Kalamba Ring Road Kolhapur 416012</p>
             </div>
             <div className='contact-card'>
               <h2><FontAwesomeIcon icon={faPhone} shake></FontAwesomeIcon> PHONE NUMBER</h2>
