@@ -1,7 +1,7 @@
 import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-
+import "../Component/Style/Footer.css"
 export default function Footer() {
   return (
     <footer>

@@ -1,0 +1,53 @@
+:root {
+    --firstColor:#19765d;
+    --secondaryColor: #14d7b3;
+    --thirdColor: #94ddcf;
+    --fourthColor: #84e3d2;
+    --white: #ffffff;
+    --black:black;
+    --fontPrimary: 'Montserrat', sans-serif;
+    --fontSecondary: 'Roboto', sans-serif;
+  }
+  
+  /* Fade animation */
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Bounce animation */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  body {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontPrimary);
+    color: var(--white);
+  }
+  
+  button {
+    background-color: var(--fourthColor);
+    color: var(--white);
+    font-family: var(--fontPrimary);
+  }
+  
+  button:hover {
+    background-color: var(--secondaryColor);
+  }
+  

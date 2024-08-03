@@ -4,13 +4,13 @@ import Aboutus from "./Aboutus";
 import ContactDetails from"./ContactDetails";
 import MapComponent from "./MapComponent";
 import NavBarComponent from "./NavbarComponent";
-import "./Style.css";
-import "./ResponsiveDesign.css";
+import "./Style/GlobalStyles.css";
 import Footer from './Footer';
 import GallaryComponent from './GallaryComponent';
 export default function HomeComponent() {
   return (
-    <div style={{width:"100%"}}>
+     
+    <div style={{width:"100%",overflow:"hidden"}}>
         <NavBarComponent></NavBarComponent>   
         <Aboutus></Aboutus>
         <OurServices></OurServices>
@@ -18,6 +18,9 @@ export default function HomeComponent() {
         <GallaryComponent></GallaryComponent>
         <MapComponent></MapComponent>
         <Footer></Footer>
+    
     </div>
+      
+    
   )
 }

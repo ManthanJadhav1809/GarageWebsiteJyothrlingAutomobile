@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import carImage from '../images/2.png';
-import '../Component/Style.css';
-import "../Component/ResponsiveDesign.css"
+import '../Component/Style/Aboutus.css';
 export default function Aboutus() {
   const headerRef = useRef(null);
   const textRef = useRef(null);
@@ -43,7 +42,6 @@ export default function Aboutus() {
 
   return (
     <div className='aboutUsContainer'>
-      {/* <div className='aboutUsMain'> */}
         <div className='aboutUsText'>
           <h2 ref={headerRef} className='aboutUsH2'>Jyothrling Automobile</h2>
           <p ref={textRef} className='aboutUsp'>
@@ -53,9 +51,8 @@ export default function Aboutus() {
           </p>
         </div>
         <div>
-        <img ref={imageRef} className="carImage" src={carImage} alt="Car" /> 
+        <img ref={imageRef}  className="carImage" src={carImage} alt="Car" /> 
         </div>
-      {/* </div> */}
     </div>
   );
 }

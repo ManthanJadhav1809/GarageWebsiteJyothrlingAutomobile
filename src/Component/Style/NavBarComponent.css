@@ -1,0 +1,88 @@
+.NavBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--firstColor);
+    color: var(--white);
+  }
+  
+  .firstDiv {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .firstDiv img {
+    margin-right: 10px;
+  }
+  
+  .secondDiv {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navLinks {
+    color: var(--white);
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: var(--fontSecondary);
+    font-size: 1rem;
+  }
+  
+  .collapseButton {
+    display: none;
+    background: var(--firstColor) !important;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .navTitle {
+    margin-top: 7px;
+    font-size: x-large;
+    font-family: auto;
+  }
+  
+  .navTitle:hover, .navLinks:hover {
+    color: var(--secondaryColor);
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .secondDiv {
+      display: "${props => (props.isCollapsed ? 'none' : 'flex')}";
+      flex-direction: column;
+      width: 100%;
+      background-color: var(--firstColor);
+      position: absolute;
+      top: 70px;
+      left: 0;
+      padding: 10px;
+    }
+  
+    .collapseButton {
+      display: block;
+    }
+  
+    .secondDiv.expanded {
+      display: flex;
+    }
+  
+    .secondDiv.collapsed {
+      display: none;
+    }
+  
+    .firstDiv {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-around;
+    }
+    .navTitle{
+      font-size: smaller;
+    }
+  }
+  

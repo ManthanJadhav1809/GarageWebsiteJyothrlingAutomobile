@@ -1,9 +1,9 @@
-/* style.css */
+style.css af4c4c
 :root{
-  --primaryColor: #546a83;
-  --secondaryColor: #af4c4c;
-  --accentColor: #ff9800;
-  --neutralColor: #f5f5f5;
+  --firstColor: #B4D6CD;
+  --secondaryColor: #FFDA76;
+  --thirdColor:#FF8C9E;
+  --fourthColor:#FF4E88;
   --white: #ffffff;
   --fontPrimary: 'Montserrat', sans-serif;
   --fontSecondary: 'Roboto', sans-serif;
@@ -42,8 +42,9 @@
   animation: bounce 2s ease-in-out infinite;
 }
 
+/* #64c3b3 */
 footer{
-  background: #64c3b3;
+  background:var(--firstColor) ;
   font-size: larger;
   display: flex;
   padding: 11px;
@@ -55,7 +56,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #64c3b3; /* Adjust as needed */
+  background-color: var(--firstColor); /* Adjust as needed */
   color: var(--white); /* Adjust as needed */
 }
 
@@ -109,9 +110,9 @@ footer{
     display: "${props => (props.isCollapsed ? 'none' : 'flex')}"; /* Toggle display based on state */
     flex-direction: column;
     width: 100%;
-    background-color: #64c3b3; /* Adjust as needed */
+    background-color: var(--firstColor); /* Adjust as needed */
     position: absolute;
-    top: 60px; /* Adjust as needed */
+    top: 70px; /* Adjust as needed */
     left: 0;
     padding: 10px;
   }
@@ -141,42 +142,36 @@ footer{
 /* about us.css */
 /* Global Styles */
 body {
+  box-sizing: border-box;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   font-family: var(--fontPrimary);
-  background-color: var(--primaryColor);
+  /* background-color: var(--secondaryColor); */
   color: var(--white);
 }
 
 /* About Page Styles */
 .aboutUsContainer {
   background-color: var(--secondaryColor);
-  color: white;
-  padding: 50px 20px;
+  color: black;
+  padding:50px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: row;
   width: 100%;
-  text-align: center;
+  box-sizing: border-box;
 }
 
-/* .aboutUsMain {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
-  max-width: 1200px;
-  gap: 20px;
-} */
 
 .aboutUsText {
   flex: 1;
-  padding: 20px;
-  max-width: 600px;
+  text-align: center;
+  /* padding: 20px; */
+  /* max-width: 600px; */
 }
 
 .aboutUsH2 {
@@ -214,81 +209,162 @@ body {
   transform: translateX(0);
 }
 
-/* Responsive Design for About Page */
-@media (max-width: 768px) {
-  .aboutUsMain {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .aboutUsH2 {
-    font-size: 1.8em;
-  }
-
-  .carImage {
-    width: 100%;
-    height: auto;
-    margin-top: 20px; /* Ensure this margin is needed */
-  }
-
-  .aboutUsText {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-  .serviceUI {
-    font-size: smaller;
-  }
-
-  .serviceImage {
-    width: 100%;
-    height: auto;
-    /* border: 5px solid green; */
-  }
-
-  .contact-info {
-    flex-direction: column; /* Ensure this is intended */
-  }
-}
-
-@media (max-width: 480px) {
-  .contact-background {
-    width: 95%;
-  }
-
-  
-
-  .contact-info h2 {
-    font-size: 1.2rem;
-  }
-
-  .contact-card {
-    margin: 10px 0;
-  }
-}
-
-
-
-@media (max-width: 767px) {
-  .serviceCard {
-    flex-direction: column;
-    width: 90%;
-  }
-
-  .serviceCard:nth-child(odd),
-  .serviceCard:nth-child(even) {
-    animation: fadeIn 1s forwards;
-  }
-}
 
 
 
 /* our servicess css */
-
-
-
+/* Container for the services section */
 .servicesContainer {
+  /* width: 100%; */
+  background-color: var(--fourthColor);
+  color: white;
+  /* padding: 40px 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.servicesHeader {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+  text-transform: uppercase;
+  position: relative;
+  font-family: auto;
+}
+
+.servicesHeader::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #333;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.servicesGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.serviceCard {
+  background-color: var(--thirdColor);
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.serviceCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imageWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.serviceImage {
+  width: 100%;
+  height: 322px;
+  display: block;
+}
+
+.serviceContent {
+  padding: 20px;
+  text-align: center;
+}
+
+.serviceContenth2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.imageAnimation {
+  background: snow;
+    border: 3px solid;
+    border-radius: 15px;
+    width: 85px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.serviceContent h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.serviceUl {
+  list-style: armenian;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.serviceUl li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceUl li::before {
+  content: '•';
+  color: #333;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.serviceCard.fade-in-left {
+  animation: fadeInLeft 1s forwards;
+}
+
+.serviceCard.fade-in-right {
+  animation: fadeInRight 1s forwards;
+}
+
+/* .servicesContainer {
   background-color: var(--primaryColor);
   color: white;
   padding: 20px;
@@ -309,12 +385,42 @@ body {
 
 .servicesGrid {
   display: flex;
-  /* width: 100%; */
+  width: 100%;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
-/* Example CSS */
+.serviceContenth2{
+  display: "flex";
+  flex-direction: row;
+  justify-content: "center";
+  align-items: "center";
+  font-family: "emoji";
+  color: black;
+}
+
+.serviceCard {
+  background-color: var(--neutralColor);
+  color: #000;
+  border-radius: 8px;
+  margin: 20px;
+  overflow: hidden;
+  width: 56%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  opacity: 0; 
+  transform: translateX(0); 
+}
+
+.serviceCard.fade-in-left {
+  animation: fadeInLeft 2s forwards;
+}
+
+.serviceCard.fade-in-right {
+  animation: fadeInRight 2s forwards;
+}
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -336,29 +442,6 @@ body {
     transform: translateX(0);
   }
 }
-
-.serviceCard {
-  background-color: var(--neutralColor);
-  color: #000;
-  border-radius: 8px;
-  margin: 20px;
-  overflow: hidden;
-  width: 56%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  transition: opacity 1s ease-out, transform 1s ease-out;
-  opacity: 0; /* Initially hidden */
-  transform: translateX(0); /* Reset transformation */
-}
-
-.serviceCard.fade-in-left {
-  animation: fadeInLeft 1s forwards;
-}
-
-.serviceCard.fade-in-right {
-  animation: fadeInRight 1s forwards;
-}
-
 
 .imageWrapper {
   flex: 1;
@@ -399,7 +482,9 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
+
+
 /* Apply the secondary font for specific elements */
 h1, h2, h3, .serviceCard h2, .contact-info h2 {
   font-family: var(--fontSecondary);
@@ -417,7 +502,6 @@ h1, h2, h3, .serviceCard h2, .contact-info h2 {
 
 /* contact Details.css */
 .contact-details {
-  background: var(--secondaryColor);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -425,11 +509,11 @@ h1, h2, h3, .serviceCard h2, .contact-info h2 {
   background: url("../images/ContactUsBackground.jpg") no-repeat center center / cover;
   color:var(--white);
   text-align: center;
-  margin-bottom: 50px;
+ 
 }
 
 .contact-background {
-  background-color: rgba(0, 0, 0, 0.6); /* Add a dark overlay to the background image */
+  background-color: rgba(88, 86, 86, 0.61); /* Add a dark overlay to the background image */
   padding: 20px;
   border-radius: 10px;
   width: 80%;
@@ -463,7 +547,7 @@ h1, h2, h3, .serviceCard h2, .contact-info h2 {
 /* Map Component */
 /* MapComponent.css */
 .map-container {
-  background: var(--forthColor);
+  background: var(--secondaryColor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,7 +580,7 @@ h1, h2, h3, .serviceCard h2, .contact-info h2 {
 .gallery-container {
   text-align: center;
   padding: 21px;
-    background: #546a83;
+    background: var(--secondaryColor);
 }
 
 .thumbnail-container {

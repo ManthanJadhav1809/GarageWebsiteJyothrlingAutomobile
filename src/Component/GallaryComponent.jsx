@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Style.css';
+import './Style/GallaryComponent.css';
 
 // Import FontAwesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

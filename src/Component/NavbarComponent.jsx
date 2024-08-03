@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import carImage from "../images/2.png";
 import React, { useState } from 'react';
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import "./Style.css";
+import "./Style/NavBarComponent.css";
 
 export default function NavbarComponent() {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -24,8 +24,8 @@ export default function NavbarComponent() {
         </button>
       </div>
       <div className={`secondDiv ${isCollapsed ? 'collapsed' : 'expanded'}`}>
-        <a className="navLinks" href="#services">Our Services</a>
-        <a className="navLinks" href="#contact">Contact Us</a>
+        <a className="navLinks" href="#Services">Our Services</a>
+        <a className="navLinks" href="#Contact">Contact Us</a>
       </div>
     </nav>
   );

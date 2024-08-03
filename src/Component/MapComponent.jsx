@@ -1,5 +1,5 @@
 import React from "react";
-import "../Component/Style.css"; // Import the CSS file
+import "../Component/Style/MapComponent.css"; // Import the CSS file
 
 export default function MapComponent() {
   return (

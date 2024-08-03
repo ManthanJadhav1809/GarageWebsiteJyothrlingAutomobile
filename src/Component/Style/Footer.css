@@ -1,0 +1,16 @@
+footer{
+    background:var(--firstColor) ;
+    color: var(--black);
+    font-size: larger;
+    display: flex;
+    padding: 11px;
+    justify-content: space-between;
+    font-family: emoji;
+  }
+  
+  @media(max-width:768px){
+    footer{
+        font-size: small;
+      }
+  }
+  

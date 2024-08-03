@@ -1,14 +1,13 @@
 import React from 'react';
-import '../Component/Style.css';
-import "../Component/ResponsiveDesign.css"
+import './Style/ContactDetails.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 const ContactDetails = () => {
   return (
-    <div className="contact-details" id="#contact">
+    <div id="#Contact" className="contact-details" >
+      <h1>CONTACT DETAILS</h1>
       <div className="contact-background">
         <div className="contact-content">
-          <h1>CONTACT DETAILS</h1>
           <div className="contact-info">
             <div className='contact-card'>
               <h2><FontAwesomeIcon icon={faLocationDot} bounce />  ADDRESS</h2>
