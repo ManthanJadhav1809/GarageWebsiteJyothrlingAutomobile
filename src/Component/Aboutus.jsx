@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import carImage from "../images/2.png";
 import "../Component/Style/Aboutus.css";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Aboutus() {
   const headerRef = useRef(null);
   const textRef = useRef(null);
@@ -56,17 +57,17 @@ export default function Aboutus() {
           ensure that your vehicle is in the best hands. Our commitment to
           excellence and customer satisfaction sets us apart in the industry.
         </p>
-        <h4>
-          Follow us on :-
-          <a
+        <h3>
+          Follow us on :-   
+         <a
             href="https://www.instagram.com/jyotirling_automobiles.kop/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "inherit", textDecoration: "none" }}
           >
-            <FontAwesomeIcon icon={faInstagram} />
+             <FontAwesomeIcon icon={faInstagram} />
           </a>{" "}
-        </h4>
+        </h3>
       </div>
       <div>
         <img ref={imageRef} className="carImage" src={carImage} alt="Car" />

@@ -1,11 +1,11 @@
 .aboutUsContainer {
     background-color: var(--secondaryColor);
-    color: var(--black);
+    color: var(--white);
     padding: 60px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 111vh;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
@@ -19,8 +19,8 @@
   }
   
   .aboutUsH2 {
-    text-shadow: 8px 5px black;
-    color: white;
+    text-shadow: 7px 0px #bb7b4ca8;
+    color: var(--white);
     text-transform: uppercase;
     font-family: fantasy;
     font-size: 4.5em;
@@ -63,7 +63,7 @@
     .aboutUsContainer {
       overflow: hidden;
       flex-direction: column;
-      padding-top: 38px;
+      /* padding-top: 6rem; */
     }
   
     .aboutUsH2 {
@@ -74,13 +74,18 @@
     .carImage {
       width: 100%;
       height: auto;
-      margin-top: 20px;
+      /* margin-top: 20px; */
     }
   
     .aboutUsText {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
+      /* padding: 10px; */
+      /* margin-bottom: 20px; */
+    }
+    .animate-text {
+      margin-top: 12px;
+      font-size: 25px;
+      font-family: cursive;
     }
   }
   

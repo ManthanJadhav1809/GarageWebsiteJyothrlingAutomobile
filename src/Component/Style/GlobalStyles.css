@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --firstColor:#19765d;
     --secondaryColor: #14d7b3;
     --thirdColor: #94ddcf;
@@ -7,8 +7,24 @@
     --black:black;
     --fontPrimary: 'Montserrat', sans-serif;
     --fontSecondary: 'Roboto', sans-serif;
-  }
+  } */
   
+  :root {
+    --firstColor: #173B45;
+    --secondaryColor: #FF8225;
+    --thirdColor: #F8EDED;
+    --fourthColor: #B43F3F;
+    --white: #ffffff;
+    --black: black;
+    --fontPrimary: 'Montserrat', sans-serif;
+    --fontSecondary: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
   /* Fade animation */
   @keyframes fade {
     from {
