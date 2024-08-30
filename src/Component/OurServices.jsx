@@ -3,9 +3,9 @@ import Lottie from "lottie-react";
 import carRepairAnimation from "../images/carRepair.json";
 import carPolishAnimation from "../images/carPolish.json";
 import carWashAnimation from "../images/CarWash.json";
-import carWashImage from "../images/carWash.jpg";
-import carRepairImage from "../images/carRepair.jpg";
-import carPolishImage from "../images/carPolish.jpg";
+import carWashImage from "../images/carWash.png";
+import carRepairImage from "../images/carRepair.png";
+import carPolishImage from "../images/carPolish.png";
 import "./Style/OurServices.css";
 
 export default function OurServices() {

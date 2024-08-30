@@ -20,7 +20,7 @@
     --fontSecondary: 'Roboto', sans-serif;
 }
 
-html {
+* {
   scroll-behavior: smooth;
 }
 

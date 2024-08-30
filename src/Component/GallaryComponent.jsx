@@ -6,12 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 // Import images
-import CarImage1 from '../images/GalleryImage/CarImage1.jpg';
-import CarImage2 from '../images/GalleryImage/CarImage2.jpg';
-import CarImage3 from '../images/GalleryImage/CarImage3.jpg';
-import CarImage4 from '../images/GalleryImage/CarImage4.jpg';
-import CarImage5 from '../images/GalleryImage/CarImage5.jpg';
-import CarImage6 from '../images/GalleryImage/CarImage6.jpg';
+import CarImage1 from '../images/GalleryImage/CarImage1.png';
+import CarImage2 from '../images/GalleryImage/CarImage2.png';
+import CarImage3 from '../images/GalleryImage/CarImage3.png';
+import CarImage4 from '../images/GalleryImage/CarImage4.png';
+import CarImage5 from '../images/GalleryImage/CarImage5.png';
+import CarImage6 from '../images/GalleryImage/CarImage6.png';
 
 // Import react-bootstrap components
 import { Button, Modal, Image } from 'react-bootstrap';

@@ -48,8 +48,9 @@
   .animate-text {
     font-weight: 500;
     opacity: 1;
-    font-family: monospace;
-    font-size: larger;}
+    font-family: "Sevillana", cursive;
+    font-size: x-large;
+  }
   
   .animate-image {
     opacity: 1;
@@ -74,6 +75,8 @@
     .carImage {
       width: 100%;
       height: auto;
+
+
       /* margin-top: 20px; */
     }
   
@@ -85,7 +88,7 @@
     .animate-text {
       margin-top: 12px;
       font-size: 25px;
-      font-family: cursive;
+      font-family:"Sevillana", cursive;
     }
   }
   
