@@ -1,14 +1,14 @@
 .aboutUsContainer {
-    background-color: var(--secondaryColor);
-    color: var(--white);
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 111vh;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
+  background-color: var(--secondaryColor);
+  color: var(--white);
+  /* padding: 69px 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
   }
   
   .aboutUsText {
@@ -54,9 +54,9 @@
   
   .animate-image {
     opacity: 1;
-    text-align: center; 
-    padding: 20px;
-    max-width: 600px;
+    /* text-align: center; */
+    /* margin: 20px; */
+    max-width: 500px;
     transform: translateX(0);
   }
   
@@ -64,21 +64,23 @@
     .aboutUsContainer {
       overflow: hidden;
       flex-direction: column;
-      /* padding-top: 6rem; */
+      height: 120vh;
+      /* justify-content: center; */
+      padding-top: 6rem;
+      
     }
   
     .aboutUsH2 {
+    font-family: "MedievalSharp", system-ui;
       text-shadow: 2px 4px black;
       font-size: 2.8em;
     }
   
     .carImage {
       width: 100%;
-      height: auto;
-
-
-      /* margin-top: 20px; */
-    }
+        /* height: auto; */
+        margin-bottom: 45px;
+   }
   
     .aboutUsText {
       width: 100%;

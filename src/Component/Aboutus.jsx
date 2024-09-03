@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import carImage from "../images/2.png";
+// import carImage from "../images/2.png";
+import carDesign from "../images/Designer.png"
 import "../Component/Style/Aboutus.css";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -70,7 +71,7 @@ export default function Aboutus() {
         </h3>
       </div>
       <div>
-        <img ref={imageRef} className="carImage" src={carImage} alt="Car" />
+        <img ref={imageRef} className="carImage" src={carDesign} alt="Car" />
       </div>
     </div>
   );

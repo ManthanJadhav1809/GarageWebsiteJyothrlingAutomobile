@@ -7,6 +7,7 @@ import NavBarComponent from "./NavbarComponent";
 import "./Style/GlobalStyles.css";
 import Footer from './Footer';
 import GallaryComponent from './GallaryComponent';
+import GoUpButton from './GoUpButton';
 export default function HomeComponent() {
   return (
      
@@ -18,6 +19,7 @@ export default function HomeComponent() {
         <GallaryComponent></GallaryComponent>
         <MapComponent></MapComponent>
         <Footer></Footer>
+        <GoUpButton></GoUpButton>
     
     </div>
       

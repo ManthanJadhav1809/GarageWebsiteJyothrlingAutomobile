@@ -1,0 +1,47 @@
+/* GoUpButton.css */
+.go-up-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px); /* Initial downward offset */
+    z-index: 1000; /* Ensures the button is above other elements */
+  }
+  
+  .go-up-button.show {
+    opacity: 1;
+    transform: translateY(0); /* Moves the button into place */
+  }
+  
+  .go-up-button .icon {
+    font-size: 20px;
+    animation: bounce 1s infinite; /* Adds a bounce animation */
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .go-up-button {
+      bottom: 30px;
+      right: 20px;
+    }
+  }
+  
